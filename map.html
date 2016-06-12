@@ -1,0 +1,42 @@
+<html>
+        <head>
+        <link rel="stylesheet" type="text/css" href="game.css" />
+          <style type='text/css'>
+          </style>
+        </head>
+        <body>
+        <script type="text/javascript" src="storyline.js"></script> 
+ <img id='map' src='images/map.jpg' usemap ='apple' onclick='coords(event)' />
+ <map name='apple'>
+     <area shape ='circle' coords ='<176>,<200>,<45>'
+          href ='field.php'/>
+     <area shape = 'circle' coords ='<425>,<266>,<38>'
+          href ='gym.php'/>
+    <area shape = 'circle' coords ='<539>,<325>,<33>'
+        href ='hallway.php'/>
+    <area shape = 'circle' coords ='<694>,<442>,<31>'
+        href ='pool.php'/>
+    <area shape = 'rect' coords = '<41><105><152><129>'
+        href ='room.php'/>
+</map>
+
+
+<script type="text/javascript">
+    function coords(ev) {
+        console.log(ev.offsetX + " "+ ev.offsetY);
+    }
+    var audio = new Audio('background-1.mp3');
+    var egg = Math.random();
+    if (egg <= 0.001) {audio = new Audio('background-why.mp3');}
+    else if (egg <= 0.01) {audio = new Audio('background-dont-play.mp3');}
+    else {}
+    audio.play();
+    function mute() {
+        audio.pause();
+    }
+    function unmute() {
+        audio.play();
+    }
+</script>
+</body>
+</html>

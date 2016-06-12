@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Head-Royce Simulator</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="indexformat.css" />
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="773232169331-g3lf3ptna0b7dece2tjrdiln4oblmp7u.apps.googleusercontent.com">
+    </head>
+
+	<body>
+    <div class="header">
+        <h1><a href="index.html">Head-Royce Simulation</a></h1>
+    </div>
+    
+    <div id="dropdowncolor">
+    </div>
+
+    <!--<div class="main">-->
+    <!--   <div class="g-signin2" data-onsuccess="onSignIn"></div>-->
+    <!--</div>-->
+    
+     <div id="starter">
+      Welcome to the Head-Royce Simulator game. 
+      This game was created by the students</p>
+      <p>of Brian Sea in his Advanced Topics Computer Science 
+      course. Our game aims to 
+      parallel the everyday </p> 
+      <p> obstacles faced by Head-Royce Highschoolers. Throughout the game, you
+      must </p>
+      <p>monitor your character's levels which include social life, 
+      anxiety, hunger, and sleep. </p>
+      <p>The game performs optimally on Google Chrome;</p>
+      <p>Other browsers are not confirmed to work properly, so keep that in mind.</p>
+      <p>With that, click the button below to begin playing the Simulator. Enjoy!
+      </p>
+      <p>
+        
+        
+      </p>
+      <a role="button" style="background-color: #009900; color:yellow;" href="starterroom.html" class="btn btn-success btn-lg">Start playing</a>
+      </div>
+    <footer>
+      <p>Website created by:</p>
+      <p>The Juniors of Advanced Topics in Computer Science</p>
+      <p>Class of 2017</p>
+      <p>Students of Brian Sea</p>
+      <p>Izzy Wrubel, Isaiah Martin, Cole Duman, Catherine McMahon</p>
+    </footer>
+    
+    <script>
+      function onSignIn(googleUser){
+        var profile = googleUser.getBasicProfile();
+        console.log("Email: " + profile.getEmail());
+      }
+
+      function myFunction(target, ev) {
+        ev.preventDefault();
+        console.log(ev);
+        if (target == document.getElementById('memes')) {
+          var x = document.forms["myForm"].elements["character"];
+          if (x == 0) {
+            window.location="easteregg.html";
+          }
+          else {
+            window.location="example.html";
+          }
+        }
+        return true;
+      }
+      
+    </script>
+  
+	</body>
+</html>
